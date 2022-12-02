@@ -1,0 +1,25 @@
+@import '../../../assets/styles/variables';
+
+:host {
+  height: $toolbar-height;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+img {
+  height: 32px;
+  margin-left: 56px;
+}
+
+@media (max-width: $mobile-size) {
+  :host {
+    height: 56px;
+  }
+
+  img {
+    height: 24px;
+    margin-left: 16px;
+  }
+}
