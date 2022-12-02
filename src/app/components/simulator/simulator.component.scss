@@ -1,0 +1,48 @@
+@import '../../../assets/styles/variables';
+
+section {
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
+  border-radius: 8px;
+  padding: 35px 40px 40px;
+  width: 480px;
+}
+
+.goal-header {
+  font-family: 'Rubik';
+  display: flex;
+  align-items: center;
+
+  .goal-info {
+    margin-left: 16px;
+
+    p {
+      margin: 0;
+    }
+
+    .goal-title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 120%;
+      color: #1E2A32;
+      margin-bottom: 4px;
+    }
+
+    .goal-subtitle {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #708797;
+    }
+  }
+
+}
+
+@media screen and (max-width: $mobile-size) {
+  :host {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+}

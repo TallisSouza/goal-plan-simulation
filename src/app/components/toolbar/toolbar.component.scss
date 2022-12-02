@@ -1,6 +1,6 @@
 @import '../../../assets/styles/variables';
 
-:host {
+header {
   height: $toolbar-height;
   background: #FFF;
   display: flex;
@@ -14,7 +14,7 @@ img {
 }
 
 @media (max-width: $mobile-size) {
-  :host {
+  header {
     height: 56px;
   }
 

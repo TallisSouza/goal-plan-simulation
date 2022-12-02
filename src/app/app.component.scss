@@ -1,3 +1,37 @@
+@import '../assets/styles/variables';
+
 :host {
   background-color: #F4F8FA;
+  height: 100vh;
+  display: block;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: $desktop-spacing 0;
+
+  h1 {
+    color: #1B31A8;
+    font-size: 20px;
+    line-height: 120%;
+    font-family: 'WorkSans';
+    font-weight: 400;
+    margin: $desktop-spacing 0;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-size) {
+  .container {
+    padding: $mobile-spacing 0;
+
+    h1 {
+      margin: $mobile-spacing 0;
+    }
+  }
 }
