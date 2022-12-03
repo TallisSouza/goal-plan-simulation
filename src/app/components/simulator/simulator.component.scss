@@ -1,5 +1,9 @@
 @import '../../../assets/styles/variables';
 
+:host {
+  display: flex;
+}
+
 section {
   background: #FFFFFF;
   box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
@@ -35,14 +39,51 @@ section {
       color: #708797;
     }
   }
-
 }
+
+.goal-body {
+  display: flex;
+  margin-top: 28px;
+
+  .amount {
+    width: 272px;
+    margin-right: 16px;
+  }
+
+  .datepicker {
+    width: 192px;
+  }
+
+  .input-label {
+    font-family: 'WorkSans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+}
+
 
 @media screen and (max-width: $mobile-size) {
   :host {
     width: 100%;
   }
+
   section {
     width: 100%;
+    padding: 24px 24px 40px;
   }
+
+  .goal-body {
+    flex-direction: column;
+    margin-top: 24px;
+
+    .amount,
+    .datepicker {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
 }

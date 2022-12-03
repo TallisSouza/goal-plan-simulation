@@ -4,17 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SimulatorComponent } from './components/simulator/simulator.component';
+import { FormsModule } from '@angular/forms';
+import { AmountInputComponent } from './components/amount-input/amount-input.component';
+import { CurrencyPipe } from '@angular/common';
+import { CurrencyMaskModule } from 'ng2-currency-mask';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    SimulatorComponent
+    SimulatorComponent,
+    AmountInputComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    CurrencyMaskModule
   ],
-  providers: [],
+  providers: [CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
