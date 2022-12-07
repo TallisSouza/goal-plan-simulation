@@ -1,23 +1,23 @@
 @import '../assets/styles/variables';
 
 :host {
-  background-color: #F4F8FA;
-  height: 100vh;
+  background-color: $white-background;
   display: block;
+  min-height: 100vh;
 }
 
 .container {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: column;
   padding: $desktop-spacing 0;
 
   h1 {
-    color: #1B31A8;
-    font-size: 20px;
-    line-height: 120%;
+    color: $blue;
     font-family: 'WorkSans';
+    font-size: 20px;
     font-weight: 400;
+    line-height: 120%;
     margin: $desktop-spacing 0;
 
     strong {

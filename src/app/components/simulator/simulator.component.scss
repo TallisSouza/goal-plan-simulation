@@ -6,16 +6,16 @@
 
 section {
   background: #FFFFFF;
-  box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
   border-radius: 8px;
+  box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
   padding: 35px 40px 40px;
   width: 480px;
 }
 
 .goal-header {
-  font-family: 'Rubik';
-  display: flex;
   align-items: center;
+  display: flex;
+  font-family: 'Rubik';
 
   .goal-info {
     margin-left: 16px;
@@ -25,18 +25,18 @@ section {
     }
 
     .goal-title {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 120%;
       color: #1E2A32;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 120%;
       margin-bottom: 4px;
     }
 
     .goal-subtitle {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
       color: #708797;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
     }
   }
 }
@@ -70,18 +70,18 @@ section {
   }
 
   button {
-    width: 320px;
-    height: 56px;
-    background: #1B31A8;
-    border-radius: 32px;
-    font-family: 'WorkSans';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
     align-self: center;
-    color: #fff;
+    background: $blue;
+    border-radius: 32px;
     border: none;
+    color: #fff;
+    font-family: 'WorkSans';
+    font-size: 16px;
+    font-weight: 600;
+    height: 56px;
+    line-height: 20px;
     margin-top: 32px;
+    width: 320px;
   }
 }
 
@@ -99,6 +99,7 @@ section {
   .goal-body {
     flex-direction: column;
     margin-top: 24px;
+    width: 100%;
 
     .fields {
       flex-direction: column;
@@ -109,6 +110,9 @@ section {
       width: 100%;
       margin-bottom: 16px;
     }
-  }
 
+    button {
+      width: 80%;
+    }
+  }
 }

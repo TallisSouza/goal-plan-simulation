@@ -14,7 +14,7 @@ export class MonthpickerComponent implements OnInit {
 
   @ViewChild('monthInput') monthInput!: ElementRef<HTMLInputElement>;
 
-  @HostListener('click') onClick(){
+  @HostListener('click') onClick() {
     this.focusInput();
   }
 
@@ -32,7 +32,7 @@ export class MonthpickerComponent implements OnInit {
   goToPreviousMonth(): void {
     if (this.canGoToPreviousMonth) {
       this.month.setMonth(this.month.getMonth() - 1);
-      if (this.month.getMonth() === this.initialDate.getMonth() && this.month.getFullYear() === this.initialDate.getFullYear()) {
+      if (this.compareMonths(this.month, this.initialDate)) {
         this.canGoToPreviousMonth = false;
       }
       this.updateDate();
@@ -43,7 +43,11 @@ export class MonthpickerComponent implements OnInit {
     this.monthInput.nativeElement.focus();
   }
 
-  private updateDate() {
+  private compareMonths(dateA: Date, dateB: Date): boolean {
+    return dateA.getMonth() === dateB.getMonth() && dateA.getFullYear() === dateB.getFullYear()
+  }
+
+  private updateDate(): void {
     this.month = new Date(
       this.month.getFullYear(),
       this.month.getMonth(),

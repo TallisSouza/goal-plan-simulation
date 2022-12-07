@@ -1,15 +1,17 @@
+@import '../../../assets/styles/variables';
+
 :host {
+  border-radius: 8px;
+  border: $gray-border;
   height: 155px;
   width: 480px;
-  border-radius: 8px;
-  border: 1px solid #E9EEF2;
 }
 
 .result-header {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  display: flex;
   height: 75px;
+  justify-content: space-around;
 
   .title {
     font-family: 'WorkSans';
@@ -19,29 +21,34 @@
   }
 
   .value {
+    color: #0079FF;
     font-family: 'Rubik';
     font-size: 32px;
     font-weight: 500;
     line-height: 38px;
-    color: #0079FF;
   }
 }
 
 .result-details {
-  height: 80px;
-  display: flex;
   align-items: center;
-  background-color: #F4F8FA;
-  font-family: 'WorkSans';
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  padding: 0 32px;
+  background-color: $white-background;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  display: flex;
+  font-family: 'WorkSans';
+  font-size: 12px;
+  font-weight: 400;
+  height: 80px;
+  line-height: 16px;
+  padding: 0 32px;
 
   p {
     margin: 0;
+  }
+}
 
+@media screen and (max-width: $mobile-size) {
+  :host {
+    width: 100%;
   }
 }

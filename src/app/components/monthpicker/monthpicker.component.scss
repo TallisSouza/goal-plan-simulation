@@ -1,43 +1,42 @@
+@import '../../../assets/styles/variables';
+
 :host {
+  align-items: center;
   display: flex;
-  position: relative;
-  height: 56px;
-  width: calc(100% - 32px);
+  height: $input-size;
   justify-content: space-between;
   padding: 0 16px;
-  align-items: center;
+  position: relative;
 }
 
 input {
-  height: 56px;
-  border-radius: 4px;
-  border: 1px solid #E9EEF2;
   background-color: #fff;
-  padding: 0 16px;
+  border-radius: 4px;
+  border: $gray-border;
+  cursor: default;
+  height: $input-size;
+  left: 0;
+  padding: 0;
   position: absolute;
   width: 100%;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  cursor: default;
 }
 
 button {
   background-color: transparent;
   border: none;
-  z-index: 2;
   cursor: pointer;
+  z-index: 2;
 }
 
 p {
+  cursor: default;
   font-family: 'WorkSans';
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
   margin: 0;
-  z-index: 2;
   position: relative;
-  cursor: default;
+  text-align: center;
+  z-index: 2;
 }
 
 .month {
@@ -46,5 +45,5 @@ p {
 
 .year {
   font-weight: 400;
-  color: #1E2A32;
+  color: #1E2A3280;
 }

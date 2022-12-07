@@ -1,5 +1,20 @@
-$toolbar-height: 80px;
-$mobile-size: 600px;
+//toolbar
+$toolbar-desktop-height: 80px;
+$toolbar-mobile-height: 56px;
+$toolbar-desktop-image-height: 32px;
+$toolbar-mobile-image-height: 24px;
 
+// Inputs
+$input-size: 56px;
+
+// Sizing and spacing
+$mobile-size: 600px;
 $desktop-spacing: 24px;
 $mobile-spacing: 16px;
+
+// Colors
+$blue: #1B31A8;
+$white-background: #F4F8FA;
+
+// Others
+$gray-border: 1px solid #E9EEF2;

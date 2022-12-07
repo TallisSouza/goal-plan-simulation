@@ -1,2 +1,9 @@
-<img src="../../../assets/imgs/dollar-sign.svg">
-<input type="text" name="amount" (ngModelChange)="updateAmount($event)" [ngModel]="amount" currencyMask [options]="{ align: 'left', prefix: '', allowNegative: false }">
+<img src="../../../assets/imgs/dollar-sign.svg" alt="Dolar sign">
+<input
+  type="text"
+  name="amount"
+  (ngModelChange)="updateAmount($event)"
+  [ngModel]="amount"
+  currencyMask
+  [options]="{ align: 'left', prefix: '', allowNegative: false }"
+>

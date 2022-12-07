@@ -1,25 +1,25 @@
 @import '../../../assets/styles/variables';
 
 header {
-  height: $toolbar-height;
+  align-items: center;
   background: #FFF;
   display: flex;
-  align-items: center;
+  height: $toolbar-desktop-height;
   width: 100%;
 }
 
 img {
-  height: 32px;
+  height: $toolbar-desktop-image-height;
   margin-left: 56px;
 }
 
 @media (max-width: $mobile-size) {
   header {
-    height: 56px;
+    height: $toolbar-mobile-height;
   }
 
   img {
-    height: 24px;
+    height: $toolbar-mobile-image-height;
     margin-left: 16px;
   }
 }
