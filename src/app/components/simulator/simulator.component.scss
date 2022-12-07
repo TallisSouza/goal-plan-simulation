@@ -82,6 +82,10 @@ section {
     line-height: 20px;
     margin-top: 32px;
     width: 320px;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.99);
+    }
   }
 }
 
