@@ -10,17 +10,17 @@
     <div class="fields">
       <div class="form-field amount">
         <label class="input-label">Total Amount</label>
-        <app-amount-input [amount]="25000"></app-amount-input>
+        <app-amount-input [(amount)]="amount" (amountChange)="updateSimulation()"></app-amount-input>
       </div>
       <div class="form-field datepicker">
         <label class="input-label">Reach goal by</label>
-        <app-monthpicker></app-monthpicker>
+        <app-monthpicker (monthChanged)="updateSelectedMonth($event)"></app-monthpicker>
       </div>
     </div>
     <app-simulation-result
-      [monthlyAmount]="520.83"
-      [monthAmount]="48"
-      [amount]="25000"
+      [monthlyAmount]="monthlyAmount"
+      [monthAmount]="monthAmount"
+      [amount]="amount"
     ></app-simulation-result>
     <button>Confirm</button>
   </div>

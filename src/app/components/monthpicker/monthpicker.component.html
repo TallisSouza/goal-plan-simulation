@@ -1,11 +1,11 @@
 <input (keydown.ArrowLeft)="goToPreviousMonth()" (keydown.ArrowRight)="goToNextMonth()" readonly #monthInput>
-<button (click)="goToPreviousMonth()" [disabled]="!canGoToPreviousMonth">
+<button (click)="goToPreviousMonth()" tabindex="-1" [disabled]="!canGoToPreviousMonth">
   <img src="../../../assets/imgs/arrow-left.svg" alt="Arrow to the left">
 </button>
 <div>
   <p class="month">{{month | date: 'MMMM'}}</p>
   <p class="year">{{month | date: 'yyyy'}}</p>
 </div>
-<button (click)="goToNextMonth()">
+<button (click)="goToNextMonth()" tabindex="-1">
   <img src="../../../assets/imgs/arrow-right.svg" alt="Arrow to the right">
 </button>
