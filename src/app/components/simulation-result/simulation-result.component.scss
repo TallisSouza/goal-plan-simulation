@@ -1,0 +1,47 @@
+:host {
+  height: 155px;
+  width: 480px;
+  border-radius: 8px;
+  border: 1px solid #E9EEF2;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+
+  .title {
+    font-family: 'WorkSans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .value {
+    font-family: 'Rubik';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    color: #0079FF;
+  }
+}
+
+.result-details {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #F4F8FA;
+  font-family: 'WorkSans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 32px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  p {
+    margin: 0;
+
+  }
+}

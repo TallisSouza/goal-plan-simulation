@@ -7,13 +7,21 @@
     </div>
   </div>
   <div class="goal-body">
-    <div class="form-field amount">
-      <label class="input-label">Total Amount</label>
-      <app-amount-input [amount]="5"></app-amount-input>
+    <div class="fields">
+      <div class="form-field amount">
+        <label class="input-label">Total Amount</label>
+        <app-amount-input [amount]="25000"></app-amount-input>
+      </div>
+      <div class="form-field datepicker">
+        <label class="input-label">Reach goal by</label>
+        <app-monthpicker></app-monthpicker>
+      </div>
     </div>
-    <div class="form-field datepicker">
-      <label class="input-label">Reach goal by</label>
-      <app-monthpicker></app-monthpicker>
-    </div>
+    <app-simulation-result
+      [monthlyAmount]="520.83"
+      [monthAmount]="48"
+      [amount]="25000"
+    ></app-simulation-result>
+    <button>Confirm</button>
   </div>
 </section>

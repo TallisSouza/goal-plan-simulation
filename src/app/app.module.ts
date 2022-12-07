@@ -9,6 +9,7 @@ import { AmountInputComponent } from './components/amount-input/amount-input.com
 import { CurrencyPipe } from '@angular/common';
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { MonthpickerComponent } from './components/monthpicker/monthpicker.component';
+import { SimulationResultComponent } from './components/simulation-result/simulation-result.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MonthpickerComponent } from './components/monthpicker/monthpicker.compo
     SimulatorComponent,
     AmountInputComponent,
     MonthpickerComponent,
+    SimulationResultComponent,
   ],
   imports: [
     BrowserModule,
