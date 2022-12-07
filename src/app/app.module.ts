@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { AmountInputComponent } from './components/amount-input/amount-input.component';
 import { CurrencyPipe } from '@angular/common';
 import { CurrencyMaskModule } from 'ng2-currency-mask';
+import { MonthpickerComponent } from './components/monthpicker/monthpicker.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CurrencyMaskModule } from 'ng2-currency-mask';
     ToolbarComponent,
     SimulatorComponent,
     AmountInputComponent,
+    MonthpickerComponent,
   ],
   imports: [
     BrowserModule,
